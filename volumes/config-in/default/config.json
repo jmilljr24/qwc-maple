@@ -1,791 +1,769 @@
 {
-  "searchServiceUrl":"http://localhost:5011/",
-  "searchDataServiceUrl":"http://localhost:5011/geom/",
-  "editServiceUrl":"http://localhost:5012/",
-  "mapInfoService":"http://localhost:5016/",
-  "permalinkServiceUrl":"http://localhost:5001/",
-  "elevationServiceUrl":"http://localhost:5002/",
-  "featureReportService":"http://localhost:5020/",
-  "urlPositionFormat":"centerAndZoom",
-  "urlPositionCrs":"",
-  "omitUrlParameterUpdates":false,
-  "preserveExtentOnThemeSwitch":true,
-  "preserveBackgroundOnThemeSwitch":true,
-  "preserveNonThemeLayersOnThemeSwitch":false,
-  "allowReorderingLayers":true,
-  "preventSplittingGroupsWhenReordering":false,
-  "allowLayerTreeSeparators":false,
-  "allowRemovingThemeLayers":true,
-  "globallyDisableDockableDialogs":false,
-  "searchThemes":true,
-  "allowAddingOtherThemes":true,
-  "allowFractionalZoom":false,
-  "localeAwareNumbers":false,
-  "identifyTool":"Identify",
-  "wmsDpi":96,
-  "wmsHidpi":false,
-  "qgisServerVersion":3,
-  "defaultFeatureStyle":{
-    "strokeColor":[
-      0,
-      0,
-      255,
-      1
-    ],
-    "strokeWidth":1,
-    "strokeDash":[
-      4
-    ],
-    "fillColor":[
-      255,
-      0,
-      255,
-      0.33
-    ],
-    "circleRadius":10,
-    "textFill":"black",
-    "textStroke":"white",
-    "textFont":"11pt sans-serif"
+  "searchServiceUrl": "http://localhost:5011/",
+  "searchDataServiceUrl": "http://localhost:5011/geom/",
+  "editServiceUrl": "http://localhost:5012/",
+  "mapInfoService": "http://localhost:5016/",
+  "permalinkServiceUrl": "http://localhost:5001/",
+  "elevationServiceUrl": "http://localhost:5002/",
+  "featureReportService": "http://localhost:5020/",
+  "urlPositionFormat": "centerAndZoom",
+  "urlPositionCrs": "",
+  "omitUrlParameterUpdates": false,
+  "preserveExtentOnThemeSwitch": true,
+  "preserveBackgroundOnThemeSwitch": true,
+  "preserveNonThemeLayersOnThemeSwitch": false,
+  "allowReorderingLayers": true,
+  "preventSplittingGroupsWhenReordering": false,
+  "allowLayerTreeSeparators": false,
+  "allowRemovingThemeLayers": true,
+  "globallyDisableDockableDialogs": false,
+  "searchThemes": true,
+  "allowAddingOtherThemes": true,
+  "allowFractionalZoom": false,
+  "localeAwareNumbers": true,
+  "identifyTool": "Identify",
+  "wmsDpi": 96,
+  "wmsHidpi": false,
+  "qgisServerVersion": 3,
+  "defaultFeatureStyle": {
+    "strokeColor": [0, 0, 255, 1],
+    "strokeWidth": 1,
+    "strokeDash": [4],
+    "fillColor": [255, 0, 255, 0.33],
+    "circleRadius": 10,
+    "textFill": "black",
+    "textStroke": "white",
+    "textFont": "11pt sans-serif"
   },
-  "importLayerUrlPresets":[
+  "importLayerUrlPresets": [
     {
-      "label":"Swisstopo WMTS",
-      "value":"https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"
+      "label": "Swisstopo WMTS",
+      "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"
     }
   ],
-  "projections":[
+  "projections": [
     {
-      "code":"EPSG:32632",
-      "proj":"+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs",
-      "label":"WGS 84 / UTM zone 32N"
+      "code": "EPSG:32632",
+      "proj": "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs",
+      "label": "WGS 84 / UTM zone 32N"
     },
     {
-      "code":"EPSG:31254",
-      "proj":"+proj=tmerc +lat_0=0 +lon_0=10.33333333333333 +k=1 +x_0=0 +y_0=-5000000 +ellps=bessel +towgs84=577.326,90.129,463.919,5.137,1.474,5.297,2.4232 +units=m +no_defs +axis=neu",
-      "label":"MGI / Austria GK West"
+      "code": "EPSG:31254",
+      "proj": "+proj=tmerc +lat_0=0 +lon_0=10.33333333333333 +k=1 +x_0=0 +y_0=-5000000 +ellps=bessel +towgs84=577.326,90.129,463.919,5.137,1.474,5.297,2.4232 +units=m +no_defs +axis=neu",
+      "label": "MGI / Austria GK West"
     },
     {
-      "code":"EPSG:21781",
-      "proj":"+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs",
-      "label":"CH1903 / LV03"
+      "code": "EPSG:21781",
+      "proj": "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs",
+      "label": "CH1903 / LV03"
     },
     {
-      "code":"EPSG:2056",
-      "proj":"+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs",
-      "label":"CH1903+ / LV95"
+      "code": "EPSG:2056",
+      "proj": "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs",
+      "label": "CH1903+ / LV95"
     },
     {
-      "code":"EPSG:25832",
-      "proj":"+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
-      "label":"ETRS89 / UTM 32N"
+      "code": "EPSG:25832",
+      "proj": "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "ETRS89 / UTM 32N"
     },
     {
-      "code":"EPSG:31983",
-      "proj":"+proj=utm +zone=23 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
-      "label":"SIRGAS 2000 / UTM zone 23S"
+      "code": "EPSG:31983",
+      "proj": "+proj=utm +zone=23 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "SIRGAS 2000 / UTM zone 23S"
     }
   ],
-  "plugins":{
-    "mobile":[
+  "plugins": {
+    "mobile": [
       {
-        "name":"Map",
-        "cfg":{
-          "mapOptions":{
-            "zoomDuration":250,
-            "enableRotation":true
+        "name": "Map",
+        "cfg": {
+          "mapOptions": {
+            "zoomDuration": 250,
+            "enableRotation": true
           },
-          "toolsOptions":{
-            "OverviewSupport":{
-              "tipLabel":"Overview"
+          "toolsOptions": {
+            "OverviewSupport": {
+              "tipLabel": "Overview"
             },
-            "LocateSupport":{
-              "keepCurrentZoomLevel":true,
-              "startupMode":"DISABLED"
+            "LocateSupport": {
+              "keepCurrentZoomLevel": true,
+              "startupMode": "DISABLED"
             },
-            "ScaleBarSupport":{
-              "units":"metric"
+            "ScaleBarSupport": {
+              "units": "metric"
             }
           }
         }
       },
       {
-        "name":"HomeButton",
-        "cfg":{
-          "position":2
+        "name": "HomeButton",
+        "cfg": {
+          "position": 2
         }
       },
       {
-        "name":"LocateButton",
-        "cfg":{
-          "position":1
+        "name": "LocateButton",
+        "cfg": {
+          "position": 1
         }
       },
       {
-        "name":"BackgroundSwitcher",
-        "cfg":{
-          "position":0
+        "name": "BackgroundSwitcher",
+        "cfg": {
+          "position": 0
         }
       },
       {
-        "name":"TopBar",
-        "cfg":{
-          "menuItems":[
+        "name": "TopBar",
+        "cfg": {
+          "menuItems": [
             {
-              "key":"ThemeSwitcher",
-              "icon":"themes"
+              "key": "ThemeSwitcher",
+              "icon": "themes"
             },
             {
-              "key":"LayerTree",
-              "icon":"layers"
+              "key": "LayerTree",
+              "icon": "layers"
             },
             {
-              "key":"LayerCatalog",
-              "icon":"catalog"
+              "key": "LayerCatalog",
+              "icon": "catalog"
             },
             {
-              "key":"Share",
-              "icon":"share"
+              "key": "Share",
+              "icon": "share"
             },
             {
-              "key":"Bookmark",
-              "icon":"bookmark"
+              "key": "Bookmark",
+              "icon": "bookmark"
             },
             {
-              "key":"Tools",
-              "icon":"tools",
-              "subitems":[
+              "key": "Tools",
+              "icon": "tools",
+              "subitems": [
                 {
-                  "key":"Identify",
-                  "icon":"identify_region",
-                  "mode":"Region"
+                  "key": "Identify",
+                  "icon": "identify_region",
+                  "mode": "Region"
                 },
                 {
-                  "key":"Measure",
-                  "icon":"measure"
+                  "key": "Measure",
+                  "icon": "measure"
                 },
                 {
-                  "key":"Redlining",
-                  "icon":"draw"
+                  "key": "Redlining",
+                  "icon": "draw"
                 },
                 {
-                  "key":"Editing",
-                  "icon":"editing"
+                  "key": "Editing",
+                  "icon": "editing"
                 },
                 {
-                  "key":"FeatureForm",
-                  "icon":"featureform"
+                  "key": "FeatureForm",
+                  "icon": "featureform"
                 },
                 {
-                  "key":"AttributeTable",
-                  "icon":"editing"
+                  "key": "AttributeTable",
+                  "icon": "editing"
                 },
                 {
-                  "key":"DxfExport",
-                  "icon":"dxfexport"
+                  "key": "DxfExport",
+                  "icon": "dxfexport"
                 },
                 {
-                  "key":"RasterExport",
-                  "icon":"rasterexport"
+                  "key": "RasterExport",
+                  "icon": "rasterexport"
                 }
               ]
             },
             {
-              "key":"Print",
-              "icon":"print"
+              "key": "Print",
+              "icon": "print"
             },
             {
-              "key":"Help",
-              "icon":"info"
+              "key": "Help",
+              "icon": "info"
             },
             {
-              "key":"Settings",
-              "icon":"cog"
+              "key": "Settings",
+              "icon": "cog"
             },
             {
-              "key":"Login",
-              "icon":"login"
+              "key": "Login",
+              "icon": "login"
             }
           ],
-          "searchOptions":{
-            "minScaleDenom":1000,
-            "showProviderSelection":true,
-            "providerSelectionAllowAll":true,
-            "zoomToLayers":false,
-            "showProvidersInPlaceholder":false
+          "searchOptions": {
+            "minScaleDenom": 1000,
+            "showProviderSelection": true,
+            "providerSelectionAllowAll": true,
+            "zoomToLayers": false,
+            "showProvidersInPlaceholder": false
           },
-          "appMenuClearsTask":true,
-          "appMenuFilterField":true,
-          "appMenuVisibleOnStartup":false
+          "appMenuClearsTask": true,
+          "appMenuFilterField": true,
+          "appMenuVisibleOnStartup": false
         }
       },
       {
-        "name":"ThemeSwitcher",
-        "cfg":{
-          "collapsibleGroups":true
+        "name": "ThemeSwitcher",
+        "cfg": {
+          "collapsibleGroups": true
         }
       },
       {
-        "name":"Measure",
-        "cfg":{
-          "showMeasureModeSwitcher":true
+        "name": "Measure",
+        "cfg": {
+          "showMeasureModeSwitcher": true
         }
       },
       {
-        "name":"BottomBar",
-        "cfg":{
-          "displayCoordinates":false,
-          "displayScales":false,
-          "viewertitleUrl":"http://qgis.org/",
-          "termsUrl":"http://qgis.org/"
+        "name": "BottomBar",
+        "cfg": {
+          "displayCoordinates": false,
+          "displayScales": false,
+          "viewertitleUrl": "http://qgis.org/",
+          "termsUrl": "http://qgis.org/"
         }
       },
       {
-        "name":"Identify",
-        "cfg":{
-          "params":{
-            "FI_POINT_TOLERANCE":32,
-            "FI_LINE_TOLERANCE":16,
-            "FI_POLYGON_TOLERANCE":8,
-            "feature_count":20,
-            "region_feature_count":100
+        "name": "Identify",
+        "cfg": {
+          "params": {
+            "FI_POINT_TOLERANCE": 32,
+            "FI_LINE_TOLERANCE": 16,
+            "FI_POLYGON_TOLERANCE": 8,
+            "feature_count": 20,
+            "region_feature_count": 100
           },
-          "enableExport":true,
-          "longAttributesDisplay":"wrap",
-          "displayResultTree":false,
-          "featureInfoReturnsLayerName":true
+          "enableExport": true,
+          "longAttributesDisplay": "wrap",
+          "displayResultTree": false,
+          "featureInfoReturnsLayerName": true
         }
       },
       {
-        "name":"Share",
-        "cfg":{
-          "showSocials":true,
-          "showLink":true,
-          "showQRCode":true
+        "name": "Share",
+        "cfg": {
+          "showSocials": true,
+          "showLink": true,
+          "showQRCode": true
         },
-        "mapClickAction":"identify"
+        "mapClickAction": "identify"
       },
       {
-        "name":"Print",
-        "cfg":{
-          "inlinePrintOutput":false,
-          "printExternalLayers":true,
-          "gridInitiallyEnabled":false
+        "name": "Print",
+        "cfg": {
+          "inlinePrintOutput": false,
+          "printExternalLayers": true,
+          "gridInitiallyEnabled": false
         }
       },
       {
-        "name":"Help",
-        "mapClickAction":"identify"
+        "name": "Help",
+        "mapClickAction": "identify"
       },
       {
-        "name":"MapCopyright"
+        "name": "MapCopyright"
       },
       {
-        "name":"LayerTree",
-        "cfg":{
-          "showLegendIcons":true,
-          "showRootEntry":true,
-          "showQueryableIcon":true,
-          "allowMapTips":true,
-          "allowCompare":true,
-          "allowImport":true,
-          "groupTogglesSublayers":false,
-          "grayUnchecked":false,
-          "layerInfoWindowSize":{
-            "width":480,
-            "height":400
+        "name": "LayerTree",
+        "cfg": {
+          "showLegendIcons": true,
+          "showRootEntry": true,
+          "showQueryableIcon": true,
+          "allowMapTips": true,
+          "allowCompare": true,
+          "allowImport": true,
+          "groupTogglesSublayers": false,
+          "grayUnchecked": false,
+          "layerInfoWindowSize": {
+            "width": 480,
+            "height": 400
           },
-          "bboxDependentLegend":true,
-          "scaleDependentLegend":"theme"
+          "bboxDependentLegend": true,
+          "scaleDependentLegend": "theme"
         },
-        "mapClickAction":"unset"
+        "mapClickAction": "unset"
       },
       {
-        "name":"DxfExport"
+        "name": "DxfExport"
       },
       {
-        "name":"RasterExport",
-        "cfg":{
-          "dpis":[
-            96,
-            300
-          ],
-          "exportExternalLayers":true
+        "name": "RasterExport",
+        "cfg": {
+          "dpis": [96, 300],
+          "exportExternalLayers": true
         }
       },
       {
-        "name":"Redlining"
+        "name": "Redlining"
       },
       {
-        "name":"Editing"
+        "name": "Editing"
       },
       {
-        "name":"AttributeTable"
+        "name": "AttributeTable"
       },
       {
-        "name":"MapCompare"
+        "name": "MapCompare"
       },
       {
-        "name":"HeightProfile",
-        "cfg":{
-          "heighProfilePrecision":0
+        "name": "HeightProfile",
+        "cfg": {
+          "heighProfilePrecision": 0
         }
       },
       {
-        "name":"MapInfoTooltip",
-        "cfg":{
-          "elevationPrecision":0,
-          "includeWGS84":true
+        "name": "MapInfoTooltip",
+        "cfg": {
+          "elevationPrecision": 0,
+          "includeWGS84": true
         }
       },
       {
-        "name":"StartupMarker",
-        "cfg":{
-          "removeMode":"onclickonmarker"
+        "name": "StartupMarker",
+        "cfg": {
+          "removeMode": "onclickonmarker"
         }
       },
       {
-        "name":"LayerCatalog",
-        "cfg":{
-          "catalogUrl":"http://qwc2.sourcepole.ch/assets/catalog.json"
+        "name": "LayerCatalog",
+        "cfg": {
+          "catalogUrl": "http://qwc2.sourcepole.ch/assets/catalog.json"
         }
       },
       {
-        "name":"Bookmark"
+        "name": "Bookmark"
       },
       {
-        "name":"Authentication"
+        "name": "Authentication"
       },
       {
-        "name":"FeatureForm"
+        "name": "FeatureForm"
       },
       {
-        "name":"Settings",
-        "cfg":{
-          "languages":[
+        "name": "Settings",
+        "cfg": {
+          "languages": [
             {
-              "title":"English",
-              "value":"en-US"
+              "title": "English",
+              "value": "en-US"
             },
             {
-              "title":"Deutsch",
-              "value":"de-CH"
+              "title": "Deutsch",
+              "value": "de-CH"
             },
             {
-              "title":"Italiano",
-              "value":"it-IT"
+              "title": "Italiano",
+              "value": "it-IT"
             }
           ],
-          "colorSchemes":[
+          "colorSchemes": [
             {
-              "titleMsgId":"colorschemes.default",
-              "value":"default"
+              "titleMsgId": "colorschemes.default",
+              "value": "default"
             },
             {
-              "titleMsgId":"colorschemes.highcontrast",
-              "value":"highcontrast"
+              "titleMsgId": "colorschemes.highcontrast",
+              "value": "highcontrast"
             },
             {
-              "titleMsgId":"colorschemes.dark",
-              "value":"dark"
+              "titleMsgId": "colorschemes.dark",
+              "value": "dark"
             }
           ]
         }
       }
     ],
-    "desktop":[
+    "desktop": [
       {
-        "name":"Map",
-        "cfg":{
-          "mapOptions":{
-            "zoomDuration":250,
-            "enableRotation":true
+        "name": "Map",
+        "cfg": {
+          "mapOptions": {
+            "zoomDuration": 250,
+            "enableRotation": true
           },
-          "toolsOptions":{
-            "OverviewSupport":{
-              "tipLabel":"Overview"
+          "toolsOptions": {
+            "OverviewSupport": {
+              "tipLabel": "Overview"
             },
-            "LocateSupport":{
-              "keepCurrentZoomLevel":true,
-              "stopFollowingOnDrag":true,
-              "startupMode":"DISABLED"
+            "LocateSupport": {
+              "keepCurrentZoomLevel": true,
+              "stopFollowingOnDrag": true,
+              "startupMode": "DISABLED"
             },
-            "ScaleBarSupport":{
-              "units":"metric"
+            "ScaleBarSupport": {
+              "units": "metric"
             }
           },
-          "swipeGeometryTypeBlacklist":[
-          ],
-          "swipeLayerNameBlacklist":[
-          ]
+          "swipeGeometryTypeBlacklist": [],
+          "swipeLayerNameBlacklist": []
         }
       },
       {
-        "name":"TaskButton",
-        "cfg":{
-          "position":5,
-          "task":"LayerTree",
-          "icon":"list-alt"
+        "name": "TaskButton",
+        "cfg": {
+          "position": 5,
+          "task": "LayerTree",
+          "icon": "list-alt"
         }
       },
       {
-        "name":"TaskButton",
-        "cfg":{
-          "position":6,
-          "task":"Editing",
-          "icon":"editing"
+        "name": "TaskButton",
+        "cfg": {
+          "position": 6,
+          "task": "Editing",
+          "icon": "editing"
         }
       },
       {
-        "name":"HomeButton",
-        "cfg":{
-          "position":4
+        "name": "HomeButton",
+        "cfg": {
+          "position": 4
         }
       },
       {
-        "name":"LocateButton",
-        "cfg":{
-          "position":3
+        "name": "LocateButton",
+        "cfg": {
+          "position": 3
         }
       },
       {
-        "name":"ZoomIn",
-        "cfg":{
-          "position":2
+        "name": "ZoomIn",
+        "cfg": {
+          "position": 2
         }
       },
       {
-        "name":"ZoomOut",
-        "cfg":{
-          "position":1
+        "name": "ZoomOut",
+        "cfg": {
+          "position": 1
         }
       },
       {
-        "name":"BackgroundSwitcher",
-        "cfg":{
-          "position":0
+        "name": "BackgroundSwitcher",
+        "cfg": {
+          "position": 0
         }
       },
       {
-        "name":"TopBar",
-        "cfg":{
-          "menuItems":[
+        "name": "TopBar",
+        "cfg": {
+          "menuItems": [
             {
-              "key":"ThemeSwitcher",
-              "icon":"themes"
+              "key": "ThemeSwitcher",
+              "icon": "themes"
             },
             {
-              "key":"LayerTree",
-              "icon":"layers"
+              "key": "LayerTree",
+              "icon": "layers"
             },
             {
-              "key":"LayerCatalog",
-              "icon":"catalog"
+              "key": "LayerCatalog",
+              "icon": "catalog"
             },
             {
-              "key":"Share",
-              "icon":"share"
+              "key": "Share",
+              "icon": "share"
             },
             {
-              "key":"Bookmark",
-              "icon":"bookmark"
+              "key": "Bookmark",
+              "icon": "bookmark"
             },
             {
-              "key":"Tools",
-              "icon":"tools",
-              "subitems":[
+              "key": "Tools",
+              "icon": "tools",
+              "subitems": [
                 {
-                  "key":"TimeManager",
-                  "icon":"clock"
+                  "key": "TimeManager",
+                  "icon": "clock"
                 },
                 {
-                  "key":"Identify",
-                  "icon":"identify_region",
-                  "mode":"Region"
+                  "key": "Identify",
+                  "icon": "identify_region",
+                  "mode": "Region"
                 },
                 {
-                  "key":"Measure",
-                  "icon":"measure"
+                  "key": "Measure",
+                  "icon": "measure"
                 },
                 {
-                  "key":"Redlining",
-                  "icon":"draw"
+                  "key": "Redlining",
+                  "icon": "draw"
                 },
                 {
-                  "key":"Editing",
-                  "icon":"editing"
+                  "key": "Editing",
+                  "icon": "editing"
                 },
                 {
-                  "key":"FeatureForm",
-                  "icon":"featureform"
+                  "key": "FeatureForm",
+                  "icon": "featureform"
                 },
                 {
-                  "key":"AttributeTable",
-                  "icon":"editing"
+                  "key": "AttributeTable",
+                  "icon": "editing"
                 },
                 {
-                  "key":"DxfExport",
-                  "icon":"dxfexport"
+                  "key": "DxfExport",
+                  "icon": "dxfexport"
                 },
                 {
-                  "key":"RasterExport",
-                  "icon":"rasterexport"
+                  "key": "RasterExport",
+                  "icon": "rasterexport"
                 }
               ]
             },
             {
-              "key":"Print",
-              "icon":"print"
+              "key": "Print",
+              "icon": "print"
             },
             {
-              "key":"Help",
-              "icon":"info"
+              "key": "Help",
+              "icon": "info"
             },
             {
-              "key":"Settings",
-              "icon":"cog"
+              "key": "Settings",
+              "icon": "cog"
             },
             {
-              "key":"Login",
-              "icon":"login"
+              "key": "Login",
+              "icon": "login"
             }
           ],
-          "toolbarItems":[
+          "toolbarItems": [
             {
-              "key":"Measure",
-              "mode":"LineString",
-              "icon":"measure_line"
+              "key": "Measure",
+              "mode": "LineString",
+              "icon": "measure_line"
             },
             {
-              "key":"Measure",
-              "mode":"Polygon",
-              "icon":"measure_polygon"
+              "key": "Measure",
+              "mode": "Polygon",
+              "icon": "measure_polygon"
             },
             {
-              "key":"Print",
-              "icon":"print"
+              "key": "Print",
+              "icon": "print"
             },
             {
-              "key":"Identify",
-              "icon":"identify_region",
-              "mode":"Region"
+              "key": "Identify",
+              "icon": "identify_region",
+              "mode": "Region"
             },
             {
-              "key":"TimeManager",
-              "icon":"clock"
+              "key": "TimeManager",
+              "icon": "clock"
             }
           ],
-          "searchOptions":{
-            "minScaleDenom":1000,
-            "showProviderSelection":true,
-            "providerSelectionAllowAll":true,
-            "zoomToLayers":false,
-            "showProvidersInPlaceholder":false
+          "searchOptions": {
+            "minScaleDenom": 1000,
+            "showProviderSelection": true,
+            "providerSelectionAllowAll": true,
+            "zoomToLayers": false,
+            "showProvidersInPlaceholder": false
           },
-          "appMenuClearsTask":true,
-          "appMenuFilterField":true,
-          "appMenuVisibleOnStartup":false,
-          "logoUrl":"/"
+          "appMenuClearsTask": true,
+          "appMenuFilterField": true,
+          "appMenuVisibleOnStartup": false,
+          "logoUrl": "/"
         }
       },
       {
-        "name":"BottomBar",
-        "cfg":{
-          "viewertitleUrl":"http://qgis.org/",
-          "termsUrl":"http://qgis.org/"
+        "name": "BottomBar",
+        "cfg": {
+          "viewertitleUrl": "http://qgis.org/",
+          "termsUrl": "http://qgis.org/"
         }
       },
       {
-        "name":"Measure",
-        "cfg":{
-          "showMeasureModeSwitcher":true,
-          "snapping":true,
-          "snappingActive":true
+        "name": "Measure",
+        "cfg": {
+          "showMeasureModeSwitcher": true,
+          "snapping": true,
+          "snappingActive": true
         }
       },
       {
-        "name":"ThemeSwitcher",
-        "cfg":{
-          "collapsibleGroups":true
+        "name": "ThemeSwitcher",
+        "cfg": {
+          "collapsibleGroups": true
         }
       },
       {
-        "name":"LayerTree",
-        "cfg":{
-          "showLegendIcons":true,
-          "showRootEntry":true,
-          "showQueryableIcon":true,
-          "allowMapTips":true,
-          "allowCompare":true,
-          "allowImport":true,
-          "groupTogglesSublayers":false,
-          "grayUnchecked":false,
-          "layerInfoWindowSize":{
-            "width":480,
-            "height":400
+        "name": "LayerTree",
+        "cfg": {
+          "showLegendIcons": true,
+          "showRootEntry": true,
+          "showQueryableIcon": true,
+          "allowMapTips": true,
+          "allowCompare": true,
+          "allowImport": true,
+          "groupTogglesSublayers": false,
+          "grayUnchecked": false,
+          "layerInfoWindowSize": {
+            "width": 480,
+            "height": 400
           },
-          "bboxDependentLegend":true,
-          "scaleDependentLegend":"theme",
-          "showToggleAllLayersCheckbox":true
+          "bboxDependentLegend": true,
+          "scaleDependentLegend": "theme",
+          "showToggleAllLayersCheckbox": true
         },
-        "mapClickAction":"identify"
+        "mapClickAction": "identify"
       },
       {
-        "name":"Identify",
-        "cfg":{
-          "params":{
-            "FI_POINT_TOLERANCE":16,
-            "FI_LINE_TOLERANCE":8,
-            "FI_POLYGON_TOLERANCE":4,
-            "feature_count":20,
-            "region_feature_count":100
+        "name": "Identify",
+        "cfg": {
+          "params": {
+            "FI_POINT_TOLERANCE": 16,
+            "FI_LINE_TOLERANCE": 8,
+            "FI_POLYGON_TOLERANCE": 4,
+            "feature_count": 20,
+            "region_feature_count": 100
           },
-          "enableExport":true,
-          "longAttributesDisplay":"wrap",
-          "displayResultTree":false,
-          "featureInfoReturnsLayerName":true,
-          "initialWidth":480,
-          "initialHeight":550
+          "enableExport": true,
+          "longAttributesDisplay": "wrap",
+          "displayResultTree": false,
+          "featureInfoReturnsLayerName": true,
+          "initialWidth": 480,
+          "initialHeight": 550
         }
       },
       {
-        "name":"MapTip"
+        "name": "MapTip"
       },
       {
-        "name":"Share",
-        "cfg":{
-          "showSocials":true,
-          "showLink":true,
-          "showQRCode":true
+        "name": "Share",
+        "cfg": {
+          "showSocials": true,
+          "showLink": true,
+          "showQRCode": true
         },
-        "mapClickAction":"identify"
+        "mapClickAction": "identify"
       },
       {
-        "name":"Print",
-        "cfg":{
-          "inlinePrintOutput":true,
-          "printExternalLayers":true,
-          "gridInitiallyEnabled":false
+        "name": "Print",
+        "cfg": {
+          "inlinePrintOutput": true,
+          "printExternalLayers": true,
+          "gridInitiallyEnabled": false
         }
       },
       {
-        "name":"Help",
-        "mapClickAction":"identify"
+        "name": "Help",
+        "mapClickAction": "identify"
       },
       {
-        "name":"MapCopyright",
-        "cfg":{
-          "showThemeCopyrightOnly":true
+        "name": "MapCopyright",
+        "cfg": {
+          "showThemeCopyrightOnly": true
         }
       },
       {
-        "name":"DxfExport",
-        "cfg":{
-
+        "name": "DxfExport",
+        "cfg": {}
+      },
+      {
+        "name": "RasterExport",
+        "cfg": {
+          "dpis": [96, 300],
+          "exportExternalLayers": true
         }
       },
       {
-        "name":"RasterExport",
-        "cfg":{
-          "dpis":[
-            96,
-            300
-          ],
-          "exportExternalLayers":true
+        "name": "Redlining",
+        "cfg": {
+          "snapping": true,
+          "snappingActive": true
         }
       },
       {
-        "name":"Redlining",
-        "cfg":{
-          "snapping":true,
-          "snappingActive":true
+        "name": "Editing",
+        "cfg": {
+          "snapping": true,
+          "snappingActive": true
         }
       },
       {
-        "name":"Editing",
-        "cfg":{
-          "snapping":true,
-          "snappingActive":true
+        "name": "MapCompare"
+      },
+      {
+        "name": "HeightProfile",
+        "cfg": {
+          "heighProfilePrecision": 0
         }
       },
       {
-        "name":"MapCompare"
-      },
-      {
-        "name":"HeightProfile",
-        "cfg":{
-          "heighProfilePrecision":0
+        "name": "MapInfoTooltip",
+        "cfg": {
+          "elevationPrecision": 0,
+          "includeWGS84": true
         }
       },
       {
-        "name":"MapInfoTooltip",
-        "cfg":{
-          "elevationPrecision":0,
-          "includeWGS84":true
+        "name": "StartupMarker",
+        "cfg": {
+          "removeMode": "onclickonmarker"
         }
       },
       {
-        "name":"StartupMarker",
-        "cfg":{
-          "removeMode":"onclickonmarker"
+        "name": "API"
+      },
+      {
+        "name": "ScratchDrawing"
+      },
+      {
+        "name": "LayerCatalog",
+        "cfg": {
+          "catalogUrl": "http://localhost/catalog.json"
         }
       },
       {
-        "name":"API"
+        "name": "Bookmark"
       },
       {
-        "name":"ScratchDrawing"
+        "name": "AttributeTable"
       },
       {
-        "name":"LayerCatalog",
-        "cfg":{
-          "catalogUrl":"http://localhost/catalog.json"
-        }
+        "name": "Authentication"
       },
       {
-        "name":"Bookmark"
+        "name": "FeatureForm"
       },
       {
-        "name":"AttributeTable"
+        "name": "TimeManager",
+        "mapClickAction": "identify"
       },
       {
-        "name":"Authentication"
-      },
-      {
-        "name":"FeatureForm"
-      },
-      {
-        "name":"TimeManager",
-        "mapClickAction":"identify"
-      },
-      {
-        "name":"Settings",
-        "cfg":{
-          "languages":[
+        "name": "Settings",
+        "cfg": {
+          "languages": [
             {
-              "title":"English",
-              "value":"en-US"
+              "title": "English",
+              "value": "en-US"
             },
             {
-              "title":"Deutsch",
-              "value":"de-CH"
+              "title": "Deutsch",
+              "value": "de-CH"
             },
             {
-              "title":"Italiano",
-              "value":"it-IT"
+              "title": "Italiano",
+              "value": "it-IT"
             }
           ],
-          "colorSchemes":[
+          "colorSchemes": [
             {
-              "titleMsgId":"colorschemes.default",
-              "value":"default"
+              "titleMsgId": "colorschemes.default",
+              "value": "default"
             },
             {
-              "titleMsgId":"colorschemes.highcontrast",
-              "value":"highcontrast"
+              "titleMsgId": "colorschemes.highcontrast",
+              "value": "highcontrast"
             },
             {
-              "titleMsgId":"colorschemes.dark",
-              "value":"dark"
+              "titleMsgId": "colorschemes.dark",
+              "value": "dark"
             }
           ]
         }
